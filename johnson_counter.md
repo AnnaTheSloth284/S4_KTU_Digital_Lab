@@ -20,19 +20,19 @@
 
 *TESTBENCH*
 <br>module tb_johnson;
-<br>  reg Clock;
-<br>  reg Reset;
-<br>  wire[3:0]Count_out;
-<br>  johnson_counter uut(.Clock(Clock),.Reset(Reset),.Count_out(Count_out));
-<br>  initial begin
-<br>    Clock=1;
-<br>    forever #50 Clock=~Clock;
-<br>  end
-<br>  initial begin
-<br>    Reset=1;
-<br>    #50;
-<br>    Reset=0;
-<br>  end
+<br>&emsp;reg Clock;
+<br>&emsp;reg Reset;
+<br>&emsp;wire[3:0]Count_out;
+<br>&emsp;johnson_counter uut(.Clock(Clock),.Reset(Reset),.Count_out(Count_out));
+<br>&emsp;initial begin
+<br>&emsp;&emsp;Clock=1;
+<br>&emsp;&emsp;forever #50 Clock=~Clock;
+<br>&emsp;end
+<br>&emsp;initial begin
+<br>&emsp;&emsp;Reset=1;
+<br>&emsp;&emsp;#50;
+<br>&emsp;&emsp;Reset=0;
+<br>&emsp;end
 <br>endmodule
 
 *O/P*
