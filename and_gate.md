@@ -18,3 +18,4 @@
 <br>endmodule
 
 *O/P*
+<img width="1261" alt="Screenshot 2023-08-16 at 7 48 48 PM" src="https://github.com/AnnaTheSloth284/S4_KTU_Digital_Lab/assets/112563080/3a25d770-f0f4-48db-b29a-8e749421517d">
