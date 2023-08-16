@@ -1,6 +1,9 @@
 *VERILOG CODE*
+
 module johnson_counter(Clock,Reset,Count_out);
+
   input Clock;
+  
   input Reset;
   output [3:0] Count_out;
   reg [3:0] Count_temp;
