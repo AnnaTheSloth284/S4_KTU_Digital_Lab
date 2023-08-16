@@ -1,21 +1,21 @@
 *VERILOG CODE*
 <br>module johnson_counter(Clock,Reset,Count_out);
 <br>  &emsp;input Clock;
-<br>  input Reset;
-<br>  output [3:0] Count_out;
-<br>  reg [3:0] Count_temp;
-<br>  always @(posedge(Clock) or Reset)
-<br>    begin
-<br>      if(Reset==1'b1)
-<br>        begin
-<br>          Count_temp=4'b0000;
-<br>        end
-<br>      else if(Clock==1'b1)
-<br>        begin
-<br>          Count_temp = {Count_temp[2:0],~Count_temp[3]};
-<br>        end
-<br>    end
-<br>  assign Count_out = Count_temp;
+<br>  &emsp;input Reset;
+<br>  &emsp;output [3:0] Count_out;
+<br>  &emsp;reg [3:0] Count_temp;
+<br>  &emsp;always @(posedge(Clock) or Reset)
+<br>  &emsp;&emsp;begin
+<br>  &emsp;&emsp;&emsp;if(Reset==1'b1)
+<br>  &emsp;&emsp;&emsp;&emsp;begin
+<br>  &emsp;&emsp;&emsp;&emsp;&emsp;Count_temp=4'b0000;
+<br>  &emsp;&emsp;&emsp;&emsp;end
+<br>  &emsp;&emsp;&emsp;else if(Clock==1'b1)
+<br>  &emsp;&emsp;&emsp;&emsp;begin
+<br>  &emsp;&emsp;&emsp;&emsp;&emsp;Count_temp = {Count_temp[2:0],~Count_temp[3]};
+<br>  &emsp;&emsp;&emsp;&emsp;end
+<br>  &emsp;&emsp;end
+<br>  &emsp;assign Count_out = Count_temp;
 <br>endmodule
 
 *TESTBENCH*
