@@ -39,7 +39,7 @@
 <br>&emsp;wire q;
 <br>&emsp;wire q_bar;
   
-<br>&emsp;sr_ff uut (.j(j),.k(k),.clk(clk),.reset(reset),.q(q),.q_bar(q_bar));
+<br>&emsp;jk_ff uut (.j(j),.k(k),.clk(clk),.reset(reset),.q(q),.q_bar(q_bar));
 <br>&emsp;initial begin
 <br>&emsp;&emsp;clk = 1;
 <br>&emsp;&emsp;forever #50 clk = ~clk;
