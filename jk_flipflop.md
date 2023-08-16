@@ -45,7 +45,7 @@
 <br>&emsp;&emsp;forever #50 clk = ~clk;
 <br>&emsp;end
 <br>&emsp;initial begin
-<br>&emsp;&emsp;s=1'b1; r=1'b0; reset = 0;
+<br>&emsp;&emsp;j=1'b0; k=1'b0; reset = 1;
 <br>&emsp;&emsp;#100 reset = 0; j=1'b1; k=1'b0;
 <br>&emsp;&emsp;#100 reset = 0; j=1'b0; k=1'b1;
 <br>&emsp;&emsp;#100 reset = 0; j=1'b0; k=1'b0;
