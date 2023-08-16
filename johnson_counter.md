@@ -5,7 +5,7 @@
 <br>  output [3:0] Count_out;
 <br>  reg [3:0] Count_temp;
 <br>  always @(posedge(Clock) or Reset)
-<br>   begin
+<br>    begin
 <br>      if(Reset==1'b1)
 <br>        begin
 <br>          Count_temp=4'b0000;
