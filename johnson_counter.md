@@ -1,42 +1,41 @@
 *VERILOG CODE*
 <br>module johnson_counter(Clock,Reset,Count_out);
-  input Clock;
-  
-  input Reset;
-  output [3:0] Count_out;
-  reg [3:0] Count_temp;
-  always @(posedge(Clock) or Reset)
-    begin
-      if(Reset==1'b1)
-        begin
-          Count_temp=4'b0000;
-        end
-      else if(Clock==1'b1)
-        begin
-          Count_temp = {Count_temp[2:0],~Count_temp[3]};
-        end
-    end
-  assign Count_out = Count_temp;
-endmodule
+<br>  input Clock;
+<br>  input Reset;
+<br>  output [3:0] Count_out;
+<br>  reg [3:0] Count_temp;
+<br>  always @(posedge(Clock) or Reset)
+<br>   begin
+<br>      if(Reset==1'b1)
+<br>        begin
+<br>          Count_temp=4'b0000;
+<br>        end
+<br>      else if(Clock==1'b1)
+<br>        begin
+<br>          Count_temp = {Count_temp[2:0],~Count_temp[3]};
+<br>        end
+<br>    end
+<br>  assign Count_out = Count_temp;
+<br>endmodule
 
 *TESTBENCH*
-module tb_johnson;
-  reg Clock;
-  reg Reset;
-  wire[3:0]Count_out;
-  johnson_counter uut(.Clock(Clock),.Reset(Reset),.Count_out(Count_out));
-  initial begin
-    $dumpfile("dump.vcd");
-    $dumpvars(1);
-    Clock=1;
-    forever #50 Clock=~Clock;
-  end
-  initial begin
-    Reset=1;
-    #50;
-    Reset=0;
-  end
-endmodule
+<br>module tb_johnson;
+<br>  reg Clock;
+<br>  reg Reset;
+<br>  wire[3:0]Count_out;
+<br>  johnson_counter uut(.Clock(Clock),.Reset(Reset),.Count_out(Count_out));
+<br>  initial begin
+<br>    $dumpfile("dump.vcd");
+<br>    $dumpvars(1);
+<br>    Clock=1;
+<br>    forever #50 Clock=~Clock;
+<br>  end
+<br>  initial begin
+<br>    Reset=1;
+<br>    #50;
+<br>    Reset=0;
+<br>  end
+<br>endmodule
 
 *O/P*
 <img width="1413" alt="Screenshot 2023-08-16 at 11 09 58 AM" src="https://github.com/AnnaTheSloth284/S4_KTU_Digital_Lab/assets/112563080/85013c2c-a3c0-4b32-b377-dd3603b0cda0">
