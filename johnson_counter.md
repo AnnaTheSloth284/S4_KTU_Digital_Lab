@@ -1,6 +1,5 @@
 *VERILOG CODE*
-
-module johnson_counter(Clock,Reset,Count_out);
+<br>module johnson_counter(Clock,Reset,Count_out);
   input Clock;
   
   input Reset;
