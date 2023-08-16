@@ -1,6 +1,6 @@
 *VERILOG CODE*
 <br>module johnson_counter(Clock,Reset,Count_out);
-<br>  input Clock;
+<br>  &emsp input Clock;
 <br>  input Reset;
 <br>  output [3:0] Count_out;
 <br>  reg [3:0] Count_temp;
