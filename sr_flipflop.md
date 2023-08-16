@@ -21,8 +21,8 @@
 <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{1'b0,1'b1}:begin q=1'b0;q_bar=1'b1;end
 <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{1'b1,1'b0}:begin q=1'b1;q_bar=1'b0;end
 <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{1'b1,1'b1}:begin q=1'bx;q_bar=1'bx;end
-<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;endcase
-<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;end
-<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;end
+<br>&emsp;&emsp;&emsp;&emsp;&emsp;endcase
+<br>&emsp;&emsp;&emsp;&emsp;end
+<br>&emsp;&emsp;end
   
 <br>endmodule
