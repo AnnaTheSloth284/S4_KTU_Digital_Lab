@@ -25,8 +25,6 @@
 <br>  wire[3:0]Count_out;
 <br>  johnson_counter uut(.Clock(Clock),.Reset(Reset),.Count_out(Count_out));
 <br>  initial begin
-<br>    $dumpfile("dump.vcd");
-<br>    $dumpvars(1);
 <br>    Clock=1;
 <br>    forever #50 Clock=~Clock;
 <br>  end
