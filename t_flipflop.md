@@ -38,10 +38,10 @@
 <br>&emsp;initial begin
 <br>&emsp;&emsp;reset = 0; t = 1;
 <br>&emsp;&emsp;#100 reset = 0; t = 1;
-<br>&emsp;&emsp;#200 reset = 1; t = 1;
-<br>&emsp;&emsp;#200 reset = 1; t = 0;
-<br>&emsp;&emsp;#200 reset = 1; t = 1;
-<br>&emsp;&emsp;#200 reset = 1; t = 1;
+<br>&emsp;&emsp;#100 reset = 1; t = 1;
+<br>&emsp;&emsp;#100 reset = 1; t = 0;
+<br>&emsp;&emsp;#100 reset = 1; t = 1;
+<br>&emsp;&emsp;#100 reset = 1; t = 1;
 <br>&emsp;end
 <br>endmodule
 
