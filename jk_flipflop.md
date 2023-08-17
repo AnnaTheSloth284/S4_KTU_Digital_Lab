@@ -49,7 +49,7 @@
 <br>&emsp;&emsp;#100 reset = 0; j=1'b1; k=1'b0;
 <br>&emsp;&emsp;#100 reset = 0; j=1'b0; k=1'b1;
 <br>&emsp;&emsp;#100 reset = 0; j=1'b0; k=1'b0;
-<br>&emsp;&emsp;#100 reset = 0; j=1'b1; k=1'b0;
+<br>&emsp;&emsp;#100 reset = 0; j=1'b1; k=1'b1;
 <br>&emsp;end
 <br>endmodule
 
